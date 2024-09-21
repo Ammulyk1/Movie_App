@@ -1,0 +1,74 @@
+.movie-details {
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+.movie-header {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: rgb(20, 17, 39);
+    border-radius: 5px;
+}
+
+.movie-poster img {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+.movie-info {
+    flex: 1;
+}
+
+.cast-heading {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cast {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.actor {
+    text-align: center;
+}
+
+.actor-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.actor p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+
+@media (max-width: 1200px) {
+    .cast {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media (max-width: 900px) {
+    .cast {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .cast {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
